@@ -10,6 +10,7 @@ import { AboutComponent } from './components/about/about.component';
 import { WorksComponent } from './components/works/works.component';
 import { ArtistsComponent } from './components/artists/artists.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { CardComponent } from './components/shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     AboutComponent,
     WorksComponent,
     ArtistsComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
