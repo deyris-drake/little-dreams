@@ -1,1 +1,8 @@
-<p>artists works!</p>
+<h1 class="animated fadeIn fast">Artistas <small>2020</small></h1>
+<hr>
+
+<div class="card-columns">
+    <app-artist-card (selectedArtist)="showArtist( $event )" [artist]="foo" [index]="i" *ngFor="let foo of artists; let i = index"></app-artist-card>
+</div>
+
+

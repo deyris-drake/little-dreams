@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtistsService, Artist } from '../../services/artists.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-artists',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./artists.component.css']
 })
 export class ArtistsComponent implements OnInit {
-
-  constructor() { }
+  artists : Artist[] = [];
+  
+  constructor(private _artistsService : ArtistsService,
+              private router : Router) { }
 
   ngOnInit(): void {
+    this.artists = this._artistsService.getArtists();
   }
 
 }
