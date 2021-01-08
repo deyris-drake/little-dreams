@@ -1,0 +1,30 @@
+<h1>{{ artist.name | uppercase }} <small> ({{ artist.appearance }}) </small></h1>
+<hr>
+
+<div class="row animated fadeIn">
+    <div class="col-md-4">
+        <img [src]="artist.img" class="img-fluid" alt="{{ artist.name }}">
+        <br><br>
+        <a [routerLink]="['/artists']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+
+    <div class="col-md-8">
+        <p>
+            {{ artist.bio }}
+        </p>
+        
+        <dl class="row">
+            <dt class="col-sm-3">Materiales: </dt>
+            <dd class="col-sm-9">{{ artist.materials }}</dd>
+          
+            <dt class="col-sm-3">¿A qué destinará sus fondos?</dt>
+            <dd class="col-sm-9">
+              <p> {{ artist.objective }}</p>
+            </dd>
+         </dl>
+        
+         <!--Imgs gallery-->
+         
+    </div>
+   
+</div>
