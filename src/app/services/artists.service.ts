@@ -8,7 +8,7 @@ export class ArtistsService {
         [
             {
               name: "Doris",
-              bio: "Le gusta pintar usando diferentes materiales. Usa mucho color y abstracción. ",
+              bio: "Le gusta pintar usando diferentes materiales. Usa mucho color y abstracción. Le gusta pintar usando diferentes materiales. Usa mucho color y abstracción. Le gusta pintar usando diferentes materiales. Usa mucho color y abstracción.",
               img: "assets/img/artists/doris.png",
               appearance: "2020",
               materials:"Papel, madera y piedra",
@@ -20,7 +20,7 @@ export class ArtistsService {
               img: "assets/img/artists/doris.png",
               appearance: "2020",
               materials:"Papel, madera y piedra",
-              objective:"Ahora quiere ..."
+              objective:"Con el dinero reunido quiere comprarse una caja para su colección de piedras."
             }
           ];
     

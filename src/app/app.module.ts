@@ -11,6 +11,7 @@ import { WorksComponent } from './components/works/works.component';
 import { ArtistsComponent } from './components/artists/artists.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CardComponent } from './components/shared/card/card.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardComponent } from './components/shared/card/card.component';
     WorksComponent,
     ArtistsComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
