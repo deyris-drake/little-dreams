@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayoutAlign="rigth rigth">
+    <h2 class="gallery-text">Galería</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <mat-grid-list [cols]="columns" gutterSize="10px" rowHeight="3:2">
+    <mat-grid-tile *ngFor="let item of gallery">
+      <img class="gallery-small-image"
+           [src]="item.src"
+           [alt]="item.alt"
+           (click)="openDialog(item.position)">
+    </mat-grid-tile>
+  </mat-grid-list>
