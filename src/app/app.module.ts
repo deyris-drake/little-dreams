@@ -28,7 +28,9 @@ import { GalleryModalComponent } from './components/gallery-modal/gallery-modal.
     ArtistsComponent,
     NavbarComponent,
     CardComponent,
-    ArtistComponent
+    ArtistComponent,
+    GalleryComponent,
+    GalleryModalComponent
   ],
   imports: [
     BrowserModule,
