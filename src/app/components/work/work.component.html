@@ -1,0 +1,15 @@
+<div class="card animated fadeIn fast">
+    <img [src]="work.img" class="card-img-top" [alt]="work.name">
+    <div class="card-body">
+      <h2 class="card-title">{{ work.name }}</h2>
+      <p class="card-text">{{ artistName }}</p>
+      <p class="card-text">{{ work.materials }}</p>
+      <p class="card-text"><small class="text-muted">{{ work.data }}</small></p>
+    
+      <button (click)="showArtist()"
+      type="button" class="btn btn-outline-success my-2 my-sm-0 btn-block">
+          Ver más
+      </button>
+      <!--a [routerLink]="['/hero', i]" routerLinkActive="router-link-active"  class=" btn btn-outline-success">Ver más link...</a-->
+    </div>
+  </div>

@@ -1,6 +1,8 @@
-import {Injectable} from '@angular/core';
-import {GalleryImage} from '../model/gallery-image';
-import {BehaviorSubject, Observable} from 'rxjs';
+import { Injectable } from '@angular/core';
+import { GalleryImage } from '../model/gallery-image';
+import { BehaviorSubject, Observable} from 'rxjs';
+import { WorksService } from '../services/works.service';
+import { Work } from '../model/work';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +12,10 @@ export class GalleryService {
   private galleryImages: GalleryImage[] = [];
   private gallery$: BehaviorSubject<GalleryImage[]> = new BehaviorSubject(this.galleryImages);
   private gallerySelected$: BehaviorSubject<GalleryImage> = new BehaviorSubject(undefined);
+  private works : Work[];
 
-  constructor() {
+  constructor(private _worksService : WorksService) {
+    this.works = _worksService.getWorksByArtist(1);
   }
 
   getGallery(): Observable<GalleryImage[]> {
@@ -24,12 +28,14 @@ export class GalleryService {
 
   createGallery(): void {
     this.galleryImages = [];
-    for (let i = 0; i < 5; i++) {
+    let i : number = 0;
+
+    for(let work of this.works ){
       this.galleryImages.push(
         {
-          src: `assets/img/works/img_${i}.jpg`,
-          position: i,
-          alt: `Image ${i}`,
+          src: work.img,
+          position: i++,
+          alt: work.name,
           first: (i === 0),
           last: (i === 4)
         });

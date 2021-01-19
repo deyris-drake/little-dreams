@@ -1,6 +1,6 @@
-<div class="container">
-    <div fxLayout="column" fxLayoutAlign="center center">
-      <h1 style="padding: 50px">My Gallery tutorial</h1>
-    </div>
- 
-  </div>
+<h1 class="animated fadeIn fast">Trabajos <small>2020</small></h1>
+<hr>
+
+<div class="card-columns">
+    <app-work (selectedArtist)="showArtist( $event )" [work]="foo" [index]="i" *ngFor="let foo of works; let i = index"></app-work>
+</div>
