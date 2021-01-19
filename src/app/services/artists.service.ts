@@ -12,7 +12,8 @@ export class ArtistsService {
               img: "assets/img/artists/doris.png",
               appearance: "2020",
               materials:"Papel, madera y piedra",
-              objective:"Ahora quiere ..."
+              objective:"Ahora quiere ...",
+              idx:1
             },
             {
               name: "Doris",
@@ -20,7 +21,8 @@ export class ArtistsService {
               img: "assets/img/artists/doris.png",
               appearance: "2020",
               materials:"Papel, madera y piedra",
-              objective:"Con el dinero reunido quiere comprarse una caja para su colección de piedras."
+              objective:"Con el dinero reunido quiere comprarse una caja para su colección de piedras.",
+              idx:2
             }
           ];
     

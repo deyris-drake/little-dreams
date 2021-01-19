@@ -18,6 +18,7 @@ import { CardComponent } from './components/shared/card/card.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { GalleryModalComponent } from './components/gallery-modal/gallery-modal.component';
+import { WorkComponent } from './components/work/work.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { GalleryModalComponent } from './components/gallery-modal/gallery-modal.
     CardComponent,
     ArtistComponent,
     GalleryComponent,
-    GalleryModalComponent
+    GalleryModalComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
